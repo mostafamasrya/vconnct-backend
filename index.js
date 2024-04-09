@@ -9,6 +9,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const port = process.env.PORT || 3001;
+const BASE_URL = process.env.NODE_APP_SSO;
 
 app.get("/", (req, res) => {
   res.send("Server is running...");
